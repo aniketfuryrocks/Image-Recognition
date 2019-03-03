@@ -6,4 +6,5 @@ photoReader.read('sampleImage.png', function name(error, pixels, info) {
         return;
     }
     console.log(pixels[13][19]);
+    let grayScale = photoReader.getGrayScale(pixels);
 })
